@@ -5,7 +5,7 @@ function Header(){
 
 return (
 
-    <h1>This is a header   :D</h1>
+    <h1>This is a header    :D</h1>
 );
 
 

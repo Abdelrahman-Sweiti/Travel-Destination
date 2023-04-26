@@ -1,11 +1,14 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 function Header(){
 
 return (
 
-    <h1>This is a header    :D</h1>
+   <nav>
+<Link to="/">Home </Link>
+
+   </nav>
 );
 
 

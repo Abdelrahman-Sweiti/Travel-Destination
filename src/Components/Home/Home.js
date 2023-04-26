@@ -3,13 +3,13 @@ import Tours from '../Tours/Tours';
 import Footer from '../Footer/Footer';
 
 
-function Home (){
+function Home (props){
 
 
 return(
 
 <><Header/>
-<Tours/>
+<Tours data={props.data}/>
 <Footer/>
 </>
 

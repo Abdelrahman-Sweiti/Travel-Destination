@@ -1,18 +1,17 @@
 import React from 'react';
-import data from '../../Data/db.json';
+import Tour from './Tour/Tour';
+import { Link } from 'react-router-dom';
 
-function Tours() {
-  const mappedData = data.map((x) => (
-    <div key={x.id}>
-      <h2>{x.name}</h2>
-      <img src={x.image} alt={x.name} />
-      <hr/>
-    </div> 
-    
+
+function Tours(props) {
+  const mappedData = props.data.map((tour) => (
+    <Link to={`/tour/${tour.id}`} key={tour.id}>
+      <Tour tour={tour} />
+    </Link>
   ));
+  
 
-  return <div>{mappedData}
-  </div>;
+  return <div>{mappedData}</div>;
 }
 
 export default Tours;
